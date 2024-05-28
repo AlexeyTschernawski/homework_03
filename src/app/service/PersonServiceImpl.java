@@ -30,7 +30,7 @@ public class PersonServiceImpl implements PersonService{
     }
 
     private void setInsuranceNumber (Person person) {
-        String insuranceNumber = String.format("%s.%s.%s", numberPrefix, person.getName().charAt(2), person.getBorn(1));
+        String insuranceNumber = String.format("%s.%s.%s", numberPrefix, person.getName().charAt(2), person.getInsuranceNumber());
         person.setInsuranceNumber(insuranceNumber);
 
     }

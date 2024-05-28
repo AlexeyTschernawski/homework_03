@@ -10,7 +10,7 @@ public class Client {
 
         AbstractApplicationContext context = new AnnotationConfigApplicationContext("app");
         PersonController controller = context.getBean(PersonController.class);
-        Person person = controller.getByBorn(12091980);
+        Person person = controller.getByBorn(1);
         System.out.println(person);
     }
 }
